@@ -1,3 +1,3 @@
-# Microsoft Power Platform Reusable Code Extensions
+# Microsoft Power Platform - Reusable Code Extensions
 
-A repository of front-end code extensions for Microsoft Copilot Studio (formerly "Power Virtual Agent") deployments
+A repository of reusable code extensions for Microsoft Power Platform (including MS Copilot Studio (formerly "Power Virtual Agent"), Power Apps, MS Graph, Power Automate, etc.). 

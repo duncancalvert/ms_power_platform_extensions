@@ -1,4 +1,12 @@
-## This is Power Fx Microsoft Power Apps code
+// This is Power Fx Microsoft Power Apps code showing how to set up a "Search Box" in your application.
+// This allows users to make runtime "Google-like" searches against an MS Graph index that are then returned to a gallery.
 
+// ---- Preprocessing/Tokenization of user search query
 
+// 1. By default MS Graph search does a Match All (AND) for all keywords which results in very few MS Graph matches being returned.
+// To override this behavior we can preprocess the string to insert a " OR " between each keyword. This results in Match Any (OR)
+Set (search_string, Substitute(Search_Box.Text, " ", " OR "));
+
+// 2. A regex expression is used to find any solitary characters in the string as they may be misspelled. These are then concategnated with the nearest word
+Set(regex_match_solitary, MatchAll(SearchBox.Text, "
 
